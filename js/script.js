@@ -28,3 +28,22 @@ $(() => {
 $(() => {
   $("p").hide();
 });
+
+// ---- Selectors ----
+
+// 1- document --> global label
+  $(document).ready(() => {
+    console.log("Hello world! (Full)");
+  });
+
+// 2- ("h1") --> using ""
+  $(() => {
+    $("p").hide();
+  });
+
+// 3- (".tamales") , ("#tamales") --> select class(.) or id(#) between "" and inside ()
+  $(() => {
+    $(".classExample").hide();
+  });
+
+// ---- Compound selectors ----
