@@ -26,7 +26,7 @@ $(() => {
   * "" --> refers to a label
 */
 $(() => {
-  $("h1").hide();
+  $("h2").hide();
 });
 
 // ---- Selectors ----
@@ -38,7 +38,7 @@ $(() => {
 
 // 2- ("h1") --> using ""
   $(() => {
-    $("h1").hide();
+    $("h2").hide();
   });
 
 // 3- (".tamales") , ("#tamales") --> select class(.) or id(#) between "" and inside ()
@@ -50,9 +50,14 @@ $(() => {
 
 $(() => {
   $("p#p1").hide();
-  $("ul li:first").hide(); // Hide the first element in the list - just for the first unordered list
-  $("ul li:first-child").hide() // Hide all the fist element in the all lists
+  // $("ul li:first").hide(); // Hide the first element in the list - just for the first unordered list
+  // $("ul li:first-child").hide() // Hide all the fist element in the all lists
 });
 
-// ---- Event scructure ----
+// ---- Event structure ----
+
+$(() => {
+  // $(selector).hide(speed, callback);
+  $("ul li:first-child").hide(1000);
+});
 
