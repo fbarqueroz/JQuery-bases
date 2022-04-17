@@ -6,6 +6,12 @@ div {
   width: 100px ;
 }
 
+#css-panel {
+  background-color: orange ;
+  height: 150px ;
+  width: 150px ;
+}
+
 .cuadrado-azul {
   background-color: blue ;
 }

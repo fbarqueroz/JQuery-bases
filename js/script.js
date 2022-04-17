@@ -63,9 +63,9 @@ $(() => {
 
 // Click event
 
-$(()=> {
+$(() => {
   $("h1").click(
-    ()=> {
+    () => {
       $("h1").hide(1000); // This is the effect
     }
   );
@@ -73,8 +73,8 @@ $(()=> {
 
 // Click event with button
 
-$(document).ready(()=> {
-  $(".btn-example").click(()=> {
+$(document).ready(() => {
+  $(".btn-example").click(() => {
     // Everything inside the function is the event that will execute the button.
     $("h1").hide(2000);
   });
@@ -82,32 +82,51 @@ $(document).ready(()=> {
 
 /* 
   -- Animate sintax --
-  - structure ==> $(selector).animate({params}, speed, callback);
+  - structure = => $(selector).animate({params}, speed, callback);
   - params = define the propietaries of css that will be animate
 */
 
-$(document).ready(()=> {
-  $("#btn").click(()=> {
+$(document).ready(() => {
+  $("#btn").click(() => {
     $(".cuadrado-azul").animate({width: '150px'});
   });
 });
 
 // Variables
 
-$(document).ready(()=> {
+$(document).ready(() => {
 
   const cuadradoAzul = $(".cuadrado-azul");
-  $("#btn-blue").click(()=> {
+  $("#btn-blue").click(() => {
     cuadradoAzul.animate({width: '150px'});
   });
 });
 
 // Callbacks --> is used to execute a line of code after an animation
 
-$(document).ready(()=> {
-  $("#btn-yellow").click(()=> {
+$(document).ready(() => {
+  $("#btn-yellow").click(() => {
     $(".cuadrado-amarillo").hide(2000, ()=> {
       alert("This is the callback :D")
     });
   });
 });
+
+// css method --> css.("propietaryName")
+
+$(document).ready(() => {
+  $(".cssBtn").click(() => {
+    let prop = $("#css-panel").css("background-color");
+    alert(prop);
+  });
+});
+
+// Change css propietaries
+
+$(document).ready(() => {
+  $(".changeBtn").click(() => {
+    $("#css-panel").css({"background-color": "red", "color": "white"});
+  });
+});
+
+/*---- (͠≖ ͜ʖ͠≖)👌 ----*/
