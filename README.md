@@ -23,8 +23,7 @@
 - Variables & Callbacks
 - Css methods
 - Chaining Method
-- DOM
-- GET & SET
+- DOM (GET & SET)
 - Append, prepend, before and after method
 - Error handling
 - For - Of, Each and Attr Iterative Structure
