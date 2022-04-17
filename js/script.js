@@ -174,7 +174,7 @@ $(()=> {
   });
   
   $("#setHtmlBtn").click(() => {
-    p.html("<b>This is an aditional bold text</b>");
+    p.html("<p>This is an aditional bold text with <b>html</b></p>");
   });
 
   $("#setValBtn").click(() => {
@@ -186,7 +186,7 @@ $(()=> {
 
 $(() => {
   $("#appendPBtn").click(() => {
-    $(".p1").append("<b>. More text, why not 🤠</b>")
+    $(".p1").append("<b> More text, why not 🤠</b>")
   });
 
   $("#appendOlBtn").click(() => {
@@ -195,6 +195,12 @@ $(() => {
 });
 
 // Prepend method
+
+$(() => {
+  $("#prependBtn").click(() => {
+    $(".p1").prepend("<b>Hold on bitch, </b>")
+  });
+});
 
 // After method
 
