@@ -129,4 +129,13 @@ $(document).ready(() => {
   });
 });
 
+// Method chaining
+
+$(document).ready(() => {
+  $(".mcBtn").click(() => {
+    let pnl = $("#css-panel");
+    pnl.css({"background-color": "grey", "color": "white"}).slideUp(2000).slideDown(2000);
+  });
+});
+
 /*---- (͠≖ ͜ʖ͠≖)👌 ----*/
