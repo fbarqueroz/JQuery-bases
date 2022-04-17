@@ -266,4 +266,13 @@ $(() => {
   });
 });
 
+// Attr property
+
+$(() => {
+  $("#lenghtBtn").click(() => {
+    let size = $("li").lenght;
+    alert(size);
+  });
+});
+
 /*---- (͠≖ ͜ʖ͠≖)👌 ----*/
