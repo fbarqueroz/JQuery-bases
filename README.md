@@ -14,3 +14,18 @@
 - Click "Download JQuery" button
 - Save the "Download the compressed, production jQuery" ancord as a link in the JS folder
 - This generate a JS file called "jquery-(version).min.js"
+
+## Content
+- Basic sintax
+- Selectors
+- Compound Selectors
+- Event structure
+- Variables & Callbacks
+- Css methods
+- Chaining Method
+- DOM
+- GET & SET
+- Append, prepend, before and after method
+- Error handling
+- For - Of, Each and Attr Iterative Structure
+- Lenght property
