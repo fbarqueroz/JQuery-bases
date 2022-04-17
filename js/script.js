@@ -96,11 +96,18 @@ $(document).ready(()=> {
 
 $(document).ready(()=> {
 
-  const cuadradoVerde = $(".cuadrado-verde");
-  $("#btn").click(()=> {
-    cuadradoVerde.animate({width: '150px'});
+  const cuadradoAzul = $(".cuadrado-azul");
+  $("#btn-blue").click(()=> {
+    cuadradoAzul.animate({width: '150px'});
   });
 });
 
-// Predefined values
+// Callbacks --> is used to execute a line of code after an animation
 
+$(document).ready(()=> {
+  $("#btn-yellow").click(()=> {
+    $(".cuadrado-amarillo").hide(2000, ()=> {
+      alert("This is the callback :D")
+    });
+  });
+});
