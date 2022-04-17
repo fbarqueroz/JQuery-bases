@@ -229,7 +229,24 @@ $(() => {
 // For - Of Iterative Structure 
 
 $(() => {
+  $("#forOfBtn").click(() => {
+    arrNums = [1,2,3,4,5];
 
+    for(let num of arrNums) {
+      alert(num);
+    }
+  })
+});
+
+// Each method
+
+$(() => {
+  $("#eachBtn").click(() => {
+    arr = [10, 20, 30, 40, 50, 60];
+    $.each(arr, (position, value) => {
+      alert(position + " - " + value);
+    });
+  });
 });
 
 /*---- (͠≖ ͜ʖ͠≖)👌 ----*/
