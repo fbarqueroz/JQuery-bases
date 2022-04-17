@@ -188,10 +188,6 @@ $(() => {
   $("#appendPBtn").click(() => {
     $(".p1").append("<b> More text, why not 🤠</b>")
   });
-
-  $("#appendOlBtn").click(() => {
-    $("ol").append("<li>Bukake 😉</li>")
-  });
 });
 
 // Prepend method
@@ -204,5 +200,18 @@ $(() => {
 
 // After method
 
+$(() => {
+  $("#afterBtn").click(() => {
+    $(".p2").after("After text!")
+  });
+});
+
 // Before method
+
+$(() => {
+  $("#beforeBtn").click(() => {
+    $(".p2").before("Before text!")
+  });
+});
+
 /*---- (͠≖ ͜ʖ͠≖)👌 ----*/
