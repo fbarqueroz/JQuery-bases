@@ -8,54 +8,61 @@
   <title>JQuery bases</title>
 </head>
 <body>
-  <h1>Tamales</h1>
-  <!--
-  <p>
-    This is the main pharagraph
-    <p id="p1">This is a paragraph inside to another paragraph</p>
-    <p>This is the second paragraph</p>
-  </p>
-  -->
-  <ul>
-    <li>Perro</li>
-    <li>Gato</li>
-    <li>Perico</li>
-  </ul>
-
-  <ul>
-    <li>Ford</li>
-    <li>Subaru</li>
-    <li>Alfa Romeo</li>
-  </ul>
-  <button class="btn-example">Hide tamales 😔</button>
-
-  <div class="cuadrado-azul">
-    <h3>Blue square</h3>
+  <div class="tamales">
+    <h1>Tamales</h1>
+    <!--
+    <p>
+      This is the main pharagraph
+      <p id="p1">This is a paragraph inside to another paragraph</p>
+      <p>This is the second paragraph</p>
+    </p>
+    -->
+    <ul>
+      <li>Perro</li>
+      <li>Gato</li>
+      <li>Perico</li>
+    </ul>
+  
+    <ul>
+      <li>Ford</li>
+      <li>Subaru</li>
+      <li>Alfa Romeo</li>
+    </ul>
+    <button class="btn-example">Hide tamales 😔</button>
   </div>
 
-  <div class="cuadrado-amarillo">
-    <h3>Yellow square</h3>
+  <div class="square-color">
+    <div class="cuadrado-azul cuadrado">
+      <h3>Blue square</h3>
+    </div>
+  
+    <div class="cuadrado-amarillo cuadrado">
+      <h3>Yellow square</h3>
+    </div>
+  
+    <div class="cuadrado-verde cuadrado">
+      <h3>Green square</h3>
+    </div>
+  
+    <br>
+  
+    <button id="btn-blue">Animate Blue</button>
+    <button id="btn-yellow">Animate Yellow</button>
   </div>
 
-  <div class="cuadrado-verde">
-    <h3>Green square</h3>
+  <div class="css-method">
+    <div id="css-panel">
+      <p>This is the css panel example :D</p>
+    </div>
+  
+    <br>
+  
+    <button class="cssBtn">Show css info</button>
+    <button class="changeBtn">Change css propietaries</button>
+    <button class="mcBtn">Method chaining</button>
   </div>
 
-  <br>
-
-  <button id="btn-blue">Animate Blue</button>
-  <button id="btn-yellow">Animate Yellow</button>
-
-  <div id="css-panel">
-    <p>This is the css panel example :D</p>
-  </div>
-
-  <br>
-
-  <button class="cssBtn">Show css info</button>
-  <button class="changeBtn">Change css propietaries</button>
-  <button class="mcBtn">Method chaining</button>
-
+<div class="dom">
   <p class="par">This is <b>bold</b> text in a paragraph</p>
 
   <button id="textBtn">Show text</button>
@@ -70,21 +77,31 @@
   <input type="text" name="Nombre" id="valInput" value="🌽 Elotes 🌽">
   <button id="valBtn">Show Value</button>
   <button id="setValBtn">Set Value</button>
+</div>
 
-  <br>
-  <br>
+  <div class="some-methods">
+    <p class="p1">This is a shitty paragraph.</p>
+    <p class="p2">This is another paraph.</p>
+  
+    <br>
+  
+    <button id="appendPBtn">Append p</button>
+    <button id="appendOlBtn">Append ol</button>
+    <button id="prependBtn">Prepend</button>
+    <button id="afterBtn">After</button>
+    <button id="beforeBtn">Before</button>
+  </div>
 
-  <p class="p1">This is a shitty paragraph.</p>
-  <p class="p2">This is another paraph.</p>
-
-  <br>
-
-  <button id="appendPBtn">Append p</button>
-  <button id="appendOlBtn">Append ol</button>
-  <button id="prependBtn">Prepend</button>
-  <button id="afterBtn">After</button>
-  <button id="beforeBtn">Before</button>
+  <div class="dimension">
+    <div class="square"></div>
+  </div>
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/script.js"></script>
+<script>
+  $.when($.ready, $.getScript("js/script.js")).then(() => {
+    console.log("The script is running");
+  }).catch(() => {
+    console.log("The script doesn't work");
+  });
+</script>
 </html>
