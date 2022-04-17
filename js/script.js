@@ -138,4 +138,47 @@ $(document).ready(() => {
   });
 });
 
+// DOM (document object model)
+
+/*
+  - text (Return the text of the object or attribute)
+  - html (return the content of some element)
+  - val
+  - GET, SET
+*/
+
+// GET
+
+$(()=> {
+  $("#textBtn").click(() => {
+    alert( "Text: " + $(".par").text() );
+  });
+  
+  $("#htmlBtn").click(() => {
+    alert( "HTML: " + $(".par").html() );
+  });
+});
+
+$("#valBtn").click(() => {
+  alert("Value: " + $("#valInput").val());
+});
+
+// SET
+
+$(()=> {
+
+  let p = $(".par");
+
+  $("#setTextBtn").click(() => {
+    p.text("Don't say blowjobs Mary Jane!! 😒");
+  });
+  
+  $("#setHtmlBtn").click(() => {
+    p.html("<b>This is an aditional bold text</b>");
+  });
+
+  $("#setValBtn").click(() => {
+    $("#valInput").val("Pacha con Jet!! 🥴");
+  });
+});
 /*---- (͠≖ ͜ʖ͠≖)👌 ----*/
