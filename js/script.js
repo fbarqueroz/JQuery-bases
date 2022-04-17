@@ -181,4 +181,22 @@ $(()=> {
     $("#valInput").val("Pacha con Jet!! 🥴");
   });
 });
+
+// Append method
+
+$(() => {
+  $("#appendPBtn").click(() => {
+    $(".p1").append("<b>. More text, why not 🤠</b>")
+  });
+
+  $("#appendOlBtn").click(() => {
+    $("ol").append("<li>Bukake 😉</li>")
+  });
+});
+
+// Prepend method
+
+// After method
+
+// Before method
 /*---- (͠≖ ͜ʖ͠≖)👌 ----*/
