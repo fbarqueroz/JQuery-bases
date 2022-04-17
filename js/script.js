@@ -255,6 +255,15 @@ $(() => {
   $("#attrBtn").click(() => {
     $("#jaimicoImg").attr("width", 100);
   });
+
+  // With json
+
+  $("#attrJsonBtn").click(() => {
+    let obj = '{"name": "Orquito", "Surname": "Potter", "Age": "20"}';
+    let objJson = JSON.parse(obj);
+
+    alert("Name: " + objJson.name);
+  });
 });
 
 /*---- (͠≖ ͜ʖ͠≖)👌 ----*/
