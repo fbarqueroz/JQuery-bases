@@ -80,5 +80,14 @@ $(document).ready(()=> {
   });
 });
 
-// css from JQuery
+/* 
+  -- Animate sintax --
+  - structure ==> $(selector).animate({params}, speed, callback);
+  - params = define the propietaries of css that will be animate
+*/
 
+$(document).ready(()=> {
+  $("#btn").click(()=> {
+    $(".cuadrado-azul").animate({width: '150px'});
+  });
+});

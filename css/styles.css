@@ -1,0 +1,23 @@
+div {
+  text-align: center;
+  border: solid 1px black ;
+  height: 100px ;
+  margin: 20px 0 0 10px ;
+  width: 100px ;
+}
+
+.cuadrado-azul {
+  background-color: blue ;
+}
+
+.cuadrado-amarillo {
+  background-color: yellow ;
+}
+
+.cuadrado-verde {
+  background-color: green ;
+}
+
+#btn {
+  margin: 10px 0 0 10px ;
+}
