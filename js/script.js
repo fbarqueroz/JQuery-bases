@@ -66,7 +66,19 @@ $(() => {
 $(()=> {
   $("h1").click(
     ()=> {
-      $("h1").hide(1000);
+      $("h1").hide(1000); // This is the effect
     }
   );
 });
+
+// Click event with button
+
+$(document).ready(()=> {
+  $(".btn-example").click(()=> {
+    // Everything inside the function is the event that will execute the button.
+    $("h1").hide(2000);
+  });
+});
+
+// css from JQuery
+
