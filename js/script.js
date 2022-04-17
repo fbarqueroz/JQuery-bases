@@ -91,3 +91,16 @@ $(document).ready(()=> {
     $(".cuadrado-azul").animate({width: '150px'});
   });
 });
+
+// Variables
+
+$(document).ready(()=> {
+
+  const cuadradoVerde = $(".cuadrado-verde");
+  $("#btn").click(()=> {
+    cuadradoVerde.animate({width: '150px'});
+  });
+});
+
+// Predefined values
+
